@@ -1,15 +1,21 @@
 {
-  "name": "Missed Call Timer",
+  "name": "Where is My Car?",
   "description": "...",
   "launch_path": "/index.html",
   "icons": {
     "128": "/resources/images/ic_launcher.png"
   },
-  "permissions": {
-    "alarms":{}
+   "permissions": {
+    "alarms":{},
+    "settings":{ "access": "readwrite" },
+    "attention":{},
+    "audio-channel-alarm":{}
   },
   "developer": {
     "name": "CulturePlex Lab.",
     "url": "http://www.cultureplex.ca"
-  }
+  },
+  "messages": [
+     { "alarm": "/index.html" }
+  ]
 }
