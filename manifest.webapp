@@ -5,6 +5,9 @@
   "icons": {
     "128": "/resources/images/ic_launcher.png"
   },
+  "permissions": {
+    "alarms":{}
+  },
   "developer": {
     "name": "CulturePlex Lab.",
     "url": "http://www.cultureplex.ca"
