@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Dial Handler</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="res/css/jquery.mobile-1.2.0.css" />
+        <script type="text/javascript" charset="utf-8" src="res/js/jquery-1.8.2.js"></script>
+        <script type="text/javascript" charset="utf-8" src="res/js/jquery.mobile-1.2.0.js"></script> 
+    </head>
+    <body>
+					    <div data-role="page" id="main">
+      <header data-role="header" data-position="fixed" id="title">
+        <h1>Where is my car?</h1>
+      </header>
+      <article data-role="content">
+          <ul data-role="listview" id="careerslist">
+              <li>
+                  <a href="#addCourses">
+                  <h1>Click here to record your car position</h1>
+                  </a>
+              </li>
+          </ul>
+      </article>
+      <footer data-role="footer" data-position="fixed" id="footermain">
+        <nav data-role="navbar" >
+            <ul >
+                <li><a href="#settings">Help</a></li>
+                <li><a href="#addCourses">Info</a></li>
+            </ul>
+            
+        </nav>
+      </footer>
+    </div><!-- Page Main -->
+
+    </body>
+</html>
