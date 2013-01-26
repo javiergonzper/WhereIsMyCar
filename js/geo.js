@@ -1,3 +1,4 @@
+
 $(document).on('click', '#record',function(e) {
     navigator.geolocation.getCurrentPosition(savePosition);
 });
@@ -6,14 +7,19 @@ $(document).on('click', '#showMap',function(e) {
 	showMap();
 });
 
+$(document).on('click', '#addAlarm',function(e) {
+	addAlarm();
+});
+
 
 function savePosition(position) {
 	console.log(position);
-	$("#lat").html("Latitude: " + position.coords.latitude);
-	$("#lng").html("Longitude: " + position.coords.longitude);
+	$('#information').attr("display","visible");
+	alert("Position Recorded");
 	localStorage.setItem('lat',position.coords.latitude);
 	localStorage.setItem('lng',position.coords.longitude);
 	localStorage.setItem('timestamp',position.timestamp);
+	$('#information').show();
 }
 
 

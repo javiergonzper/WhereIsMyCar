@@ -16,16 +16,21 @@
       </header>
       <article data-role="buttons">
          <a href="#" data-role="button" id="record">
-                  Click here to record your car position.
-         </a>
-         <a href="#" data-role="button" id="showMap">
-                  Show my car in Google Maps.
+            Record.
          </a>
       </article>
-      <article data-role="information">
+      <article id="information" style="display:none">
+		<a href="#" data-role="button" id="showMap">
+            Map.
+         </a>
+		<a href="#" data-role="button" id="addAlarm">
+            Add Alarm.
+         </a>
 		<div id="lat">  </div>
 		<div id="lng">  </div>
       </article>
+	  <div id="map">
+	  </div>
       <footer data-role="footer" data-position="fixed" id="footermain">
         <nav data-role="navbar" >
             <ul >
