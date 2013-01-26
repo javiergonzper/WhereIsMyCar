@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="res/css/jquery.mobile-1.2.0.css" />
         <script type="text/javascript" charset="utf-8" src="res/js/jquery-1.8.2.js"></script>
         <script type="text/javascript" charset="utf-8" src="res/js/jquery.mobile-1.2.0.js"></script> 
+		<script type="text/javascript" charset="utf-8" src="js/geo.js"></script> 
     </head>
     <body>
 					    <div data-role="page" id="main">
@@ -14,13 +15,9 @@
         <h1>Where is my car?</h1>
       </header>
       <article data-role="content">
-          <ul data-role="listview" id="careerslist">
-              <li>
-                  <a href="#addCourses">
-                  <h1>Click here to record your car position</h1>
+         <a href="#" data-role="button" id="record">
+                  Click here to record your car position
                   </a>
-              </li>
-          </ul>
       </article>
       <footer data-role="footer" data-position="fixed" id="footermain">
         <nav data-role="navbar" >

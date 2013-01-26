@@ -1,6 +1,12 @@
-function showMap(position) {
-      // Show a map centered at (position.coords.latitude, position.coords.longitude).
-    }
-
-    // One-shot position request.
+$(document).on('click', '#record',function(e) {
     navigator.geolocation.getCurrentPosition(showMap);
+
+});
+
+
+function showMap(position) {
+	console.log(position);
+}
+
+
+
